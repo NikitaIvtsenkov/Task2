@@ -5,6 +5,8 @@
  */
 package task2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author pupil
@@ -16,6 +18,13 @@ public class Task2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите длинну: ");
+        int number = scanner.nextInt();
+        int sum = (number/100);
+        int sum1 = (number%100/10);
+        int sum2 = (number%100%10);
+        System.out.println(sum + sum1 + sum2);
     }
     
 }
